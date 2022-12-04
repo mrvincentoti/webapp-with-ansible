@@ -1,4 +1,4 @@
-# Deploy a Web application with Ansible
+# :open_file_folder: Deploy a Web application with Ansible
 
 ### Project Prerequisites
 
@@ -16,7 +16,7 @@
 5. Create key pairs on the ansible-ec2
 6. import the public key into the ec2 console (ansible-ec2-pub-key)
 7. launch the remaining 3 servers. keypair: ansible-ec2-pub-key | Security group: ec2-sg
-8. test your connection -> ssh into other ec2 servers using their specific private IPs while on the ansible-ec2
+8. test your connection -> ssh into other ec2 servers using their specific private IPs while on the ansible-ec2 (Note you have to configure ssh connection between the servers)
 
 #### On Ansible master controller (ansible-ec2)
 
@@ -26,8 +26,8 @@
 4. Install and configure aws cli
 5. Install ansible on the ansible-ec2
 6. Clone this repository to your project directory
-7. Within your project directory, create and activate a virtual environment
-8. Install project dependencies
-9. Within the etc/ansible directory run this query to get server tags ``
+7. Within your project directory, create and activate a virtual environment (`python -m venv venv`) and (`source venv/bin/activate`) i am assuming you are using a linux machine
+8. Install project dependencies (`pip install -r requirements.txt`)
+9. Within the etc/ansible directory run this query to get server tags `ansible-inventory --list`
 10. Update the hosts in the main.yml file to reflect your desried tag
 11. Run the playbook `ansible-playbook --ask-vault-password --key-file ~/.ssh/id_rsa main.yml`
