@@ -1,8 +1,5 @@
 ---
 # tasks file for webserver
-- name: Update all packages
-  yum: name=* state=latest update_cache=true
-
 - name: install httpd
   package:
     name: "httpd"
