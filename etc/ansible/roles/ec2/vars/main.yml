@@ -1,0 +1,11 @@
+---
+ec2Key: "masterkey"
+instance_type: "t2.micro"
+ami_id: "ami-0b0dcb5067f052a63"
+vpc_subnet_id: "subnet-0bb668c92db507358"
+tag_name: "none"
+count: 1
+region: "us-east-1"
+security_group_id: "sg-0858d14ffe16cd551"
+accesskey: "none"
+secretkey: "none"
