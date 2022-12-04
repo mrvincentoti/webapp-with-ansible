@@ -9,6 +9,6 @@
 #       accesskey: "{{ akey }}"
 #       secretkey: "{{ skey }}"
 
-- hosts: tag_Name_ansible_master
+- hosts: tag_Name_worker
   roles:
     - webserver
