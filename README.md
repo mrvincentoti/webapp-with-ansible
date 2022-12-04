@@ -25,4 +25,9 @@
 3. install virtualenv (if you are using virtual environment)
 4. Install and configure aws cli
 5. Install ansible on the ansible-ec2
-6. Clone this repository
+6. Clone this repository to your project directory
+7. Within your project directory, create and activate a virtual environment
+8. Install project dependencies
+9. Within the etc/ansible directory run this query to get server tags ``
+10. Update the hosts in the main.yml file to reflect your desried tag
+11. Run the playbook `ansible-playbook --ask-vault-password --key-file ~/.ssh/id_rsa main.yml`
